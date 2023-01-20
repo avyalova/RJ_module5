@@ -1,0 +1,4 @@
+x = 5
+y = "Vyalova"
+
+console.log(x + y)
