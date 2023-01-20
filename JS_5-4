@@ -1,0 +1,5 @@
+const value1 = 5
+let value2 = Math.floor(Math.random() * 17)
+
+console.log(value1 + value2)
+// таблица приоритов операторов https://puzzleweb.ru/javascript/6_operators.php
