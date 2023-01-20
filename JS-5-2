@@ -2,3 +2,8 @@ x = 5
 y = "Vyalova"
 
 console.log(x + y)
+
+c = 8
+c = "Anna"
+
+console.log(c)
