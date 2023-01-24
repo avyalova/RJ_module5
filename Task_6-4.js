@@ -1,8 +1,12 @@
-let x = 5
-let y = 8
+let x = 8
+let y = 6
 
-function myFunction(x, y) {
-  return x, y
+function Increase(x) {
+  return ++x
 }
-console.log(++x)
-console.log(--y)
+console.log(Increase(x))
+
+function Decrease(y) {
+  return --y
+}
+console.log(Decrease(y))
