@@ -1,9 +1,8 @@
-function increment(x) {
-  ++x
-}
-console.log(5)
+let x = 5
+let y = 8
 
-function dicrement(y) {
-  ++y
+function myFunction(x, y) {
+  return x, y
 }
-console.log(9)
+console.log(++x)
+console.log(--y)
