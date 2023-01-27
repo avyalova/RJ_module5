@@ -19,9 +19,10 @@ let expencesExamples = [
 let sum = 0
 expencesExamples.forEach((expense) => {
   for (let i = 0; i < expense.yearlyExpences.length; i++) {
-    if (expense.yearlyExpences[i] > 1000) {
+    if (expense.yearlyExpences[i] <= 1000) {
       sum += expense.yearlyExpences[i]
     }
   }
-  console.log(`В этом месяце вы потратили: ${sum}`)
+  console.log(`В этом году вы потратили: ${sum}`)
 })
+l
