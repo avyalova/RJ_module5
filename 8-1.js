@@ -17,12 +17,20 @@ let expencesExamples = [
 ]
 
 let sum = 0
+
+function assert(totalSum, compare, message) {
+  if (totalSum === compare) {
+    console.log(`${message}: В этом году вы потратили: ${sum}`)
+  }
+}
+
 expencesExamples.forEach((expense) => {
   for (let i = 0; i < expense.yearlyExpences.length; i++) {
     if (expense.yearlyExpences[i] <= 1000) {
       sum += expense.yearlyExpences[i]
     }
   }
-  console.log(`В этом году вы потратили: ${sum}`)
+  assert(sum, 1707, "true")
+  assert(sum, 4927, "true")
+  assert(sum, 7617, "true")
 })
-l
