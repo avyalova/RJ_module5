@@ -17,12 +17,16 @@ let expencesExamples = [
 ]
 
 let sum = 0
-expencesExamples.forEach((expense) => {
-  for (let i = 0; i < expense.yearlyExpences.length; i++) {
-    if (expense.yearlyExpences[i] <= 1000) {
-      sum += expense.yearlyExpences[i]
+let date = new Date()
+
+expencesExamples.forEach((expense, index) => {
+  expense.yearlyExpences.forEach((i, index) => {
+    if (i > 1000) {
+      sum += i
+      // console.log(sum,index)
+    } else {
+      date.setMonth(index)
+      console.log(date.toLocaleString("en-US", { month: "long" }))
     }
-  }
-  console.log(`В этом году вы потратили: ${sum}`)
+  })
 })
-l
