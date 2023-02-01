@@ -20,13 +20,13 @@ let sum = 0
 let date = new Date()
 
 expencesExamples.forEach((expense, index) => {
-  expense.yearlyExpences.forEach((i, index) => {
+  expense.yearlyExpences.git forEach((i, index) => {
     if (i > 1000) {
       sum += i
-      // console.log(sum,index)
     } else {
       date.setMonth(index)
-      console.log(date.toLocaleString("en-US", { month: "long" }))
+      console.log(date.toLocaleString("en-US", { month: "long" }), i)
     }
   })
+  console.log("------")
 })
